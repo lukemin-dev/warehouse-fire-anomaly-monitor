@@ -1,0 +1,39 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+data/
+*.db
+
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+
+# Native/build artifacts
+android/
+ios/
+*.apk
+*.aab
+
+# Local config and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large local archives
+*.zip
+*.z01
+*.z02
+*.z03
+*.hwp

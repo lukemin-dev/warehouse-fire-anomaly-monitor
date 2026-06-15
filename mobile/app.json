@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "창고 화재 모니터",
+    "slug": "warehouse-fire-monitor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "jsEngine": "hermes",
+      "package": "kr.huro.warehousemonitor"
+    },
+    "jsEngine": "hermes",
+    "extra": {
+      "eas": {
+        "projectId": "c6b08692-9d64-46f7-bcea-4a880cc8e49a"
+      }
+    },
+    "owner": "ovo_rabbit",
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
