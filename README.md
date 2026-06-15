@@ -11,6 +11,18 @@
 - IsolationForest 기반 AI 이상 징후 탐지
 - Expo/React Native 모바일 앱 실시간 대시보드, 그래프, 경고 이력, AI 설정 화면
 
+## 기술 스택
+
+| 영역 | 기술 |
+| --- | --- |
+| Hardware | Raspberry Pi 4, MQ-2, SEN040132, MCP3008 |
+| Sensor Runtime | Python, RPi.GPIO, spidev, requests |
+| Server | Flask, SQLite, scikit-learn |
+| AI | IsolationForest |
+| Mobile | Expo, React Native, TypeScript, React Navigation |
+| Visualization | react-native-chart-kit |
+| Deployment | AWS EC2, systemd |
+
 ## 핵심 아이디어
 
 초기에는 센서의 DO 디지털 출력만 사용했지만, DO 값은 `0/1`만 제공하므로 단순 임계값 판정과 차이가 거의 없었습니다. 이를 보완하기 위해 MCP3008 ADC를 추가해 MQ-2와 불꽃 센서의 AO 아날로그 값을 `0~1023` 범위로 수집했습니다.
@@ -92,6 +104,7 @@ npm start
 - [개발 일정](docs/development-schedule.md)
 - [시스템 구성도](docs/architecture.md)
 - [ERD](docs/erd.md)
+- [API 명세](docs/api.md)
 - [시연 시나리오](docs/demo-scenario.md)
 - [개선 로드맵](docs/improvement-roadmap.md)
 - [면접 대비 Q&A](docs/interview-prep.md)
